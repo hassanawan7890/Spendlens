@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:gravity="center_vertical">
+    <TextView android:id="@+id/tvRowLabel"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="0.4" android:textSize="13sp"
+        android:textColor="@color/text_tertiary"/>
+    <TextView android:id="@+id/tvRowValue"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="0.6" android:textSize="14sp"
+        android:textColor="@color/text_primary" android:gravity="end"/>
+</LinearLayout>

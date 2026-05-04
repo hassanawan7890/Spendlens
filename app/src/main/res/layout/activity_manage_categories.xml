@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/dark_bg">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/dark_surface" android:orientation="horizontal"
+        android:gravity="center_vertical" android:paddingHorizontal="16dp"
+        android:paddingTop="44dp" android:paddingBottom="12dp">
+        <ImageButton android:id="@+id/btnBack" android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@color/text_primary"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Manage Categories"
+            android:textSize="20sp" android:textColor="@color/text_primary"
+            android:fontFamily="sans-serif-medium" android:layout_marginStart="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddCategory"
+            style="@style/SpendLens.Button.Primary"
+            android:layout_width="73dp"
+            android:layout_height="36dp"
+            android:paddingHorizontal="16dp"
+            android:text="+ Add"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/dark_border"/>
+
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvCategories"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:padding="16dp" android:clipToPadding="false"/>
+
+</LinearLayout>

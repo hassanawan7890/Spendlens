@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:paddingVertical="10dp"
+    android:layout_marginBottom="8dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:layout_marginBottom="4dp">
+        <TextView android:id="@+id/tvFlagCategory"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:textSize="14sp"
+            android:textColor="@color/text_primary" android:fontFamily="sans-serif-medium"/>
+        <TextView android:id="@+id/tvFlagSeverity"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="11sp" android:fontFamily="sans-serif-medium"
+            android:paddingHorizontal="8dp" android:paddingVertical="2dp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/tvFlagAmount"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="13sp" android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="2dp"/>
+    <TextView android:id="@+id/tvFlagAverage"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="12sp" android:textColor="@color/text_tertiary"
+        android:layout_marginBottom="6dp"/>
+    <ProgressBar android:id="@+id/progressFlag"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent" android:layout_height="4dp"
+        android:max="100" android:progressTint="@color/danger"
+        android:progressBackgroundTint="@color/dark_surface_3"/>
+</LinearLayout>

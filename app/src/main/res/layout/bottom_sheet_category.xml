@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="@color/dark_surface"
+    android:paddingBottom="24dp">
+    <View android:layout_width="40dp" android:layout_height="4dp"
+        android:background="@color/dark_border" android:layout_gravity="center"
+        android:layout_marginTop="12dp" android:layout_marginBottom="8dp"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Select category" android:textSize="16sp"
+        android:fontFamily="sans-serif-medium" android:textColor="@color/text_primary"
+        android:paddingHorizontal="20dp" android:paddingVertical="12dp"/>
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/dark_border"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvCategories"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"/>
+</LinearLayout>
